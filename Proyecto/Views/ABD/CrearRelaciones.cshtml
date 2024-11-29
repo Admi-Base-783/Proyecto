@@ -1,0 +1,130 @@
+﻿@model Proyecto.Models.RelationshipDefinitionModel
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Relaciones</title>
+    <link rel="stylesheet" href="~/CSS/NewStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crear Relaciones</h1>
+        <a href="@Url.Action("Opciones", "ABD")" class="btn btn-secondary">Anterior</a>
+
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert @(TempData["MessageType"] == "success" ? "alert-success" : "alert-danger")">
+                <i class="@(TempData["MessageType"] == "success" ? "fas fa-check-circle" : "fas fa-exclamation-circle")"></i>
+                @TempData["Message"]
+            </div>
+        }
+
+        <form id="createRelationshipForm" method="post" action="@Url.Action("CrearRelacion", "ABD")">
+            @Html.AntiForgeryToken()
+
+            <!-- Sección Tabla Origen -->
+            <h2>Tabla de Origen</h2>
+            <div>
+                <label for="SourceTable">Tabla Origen</label>
+                <select id="SourceTable" name="SourceTable" class="form-control" required>
+                    <option value="">Seleccione una tabla</option>
+                    @foreach (var table in ViewBag.Tables as List<string>)
+                    {
+                        <option value="@table">@table</option>
+                    }
+                </select>
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.SourceTable)</span>
+            </div>
+            <div>
+                <label for="SourceColumn">Columna Origen</label>
+                <select id="SourceColumn" name="SourceColumn" class="form-control" required>
+                    <option value="">Seleccione una columna</option>
+                </select>
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.SourceColumn)</span>
+            </div>
+
+            <!-- Sección Tabla Destino -->
+            <h2>Tabla de Destino</h2>
+            <div>
+                <label for="TargetTable">Tabla Destino</label>
+                <select id="TargetTable" name="TargetTable" class="form-control" required>
+                    <option value="">Seleccione una tabla</option>
+                    @foreach (var table in ViewBag.Tables as List<string>)
+                    {
+                        <option value="@table">@table</option>
+                    }
+                </select>
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.TargetTable)</span>
+            </div>
+            <div>
+                <label for="TargetColumn">Columna Destino</label>
+                <select id="TargetColumn" name="TargetColumn" class="form-control" required>
+                    <option value="">Seleccione una columna</option>
+                </select>
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.TargetColumn)</span>
+            </div>
+
+            <!-- Opciones de Relación -->
+            <h2>Opciones de Relación</h2>
+            <div>
+                <label for="RelationshipType">Tipo de Relación</label>
+                <select id="RelationshipType" name="RelationshipType" class="form-control" required>
+                    <option value="1-1">Uno a Uno</option>
+                    <option value="1-N">Uno a Muchos</option>
+                    <option value="N-M">Muchos a Muchos</option>
+                </select>
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.RelationshipType)</span>
+            </div>
+            <div>
+                <label for="ConstraintName">Nombre de la Restricción (Opcional)</label>
+                <input type="text" id="ConstraintName" name="ConstraintName" class="form-control" />
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.ConstraintName)</span>
+            </div>
+            <div>
+                <label for="CascadeOnDelete">Activar Cascade On Delete</label>
+                <input type="checkbox" id="CascadeOnDelete" name="CascadeOnDelete" value="true" />
+            </div>
+
+            <button type="submit" class="btn btn-primary">Crear Relación</button>
+        </form>
+    </div>
+
+    <script>
+        // Carga dinámica de columnas
+        function loadColumns(tableDropdownId, columnDropdownId) {
+            const tableName = document.getElementById(tableDropdownId).value;
+            const columnDropdown = document.getElementById(columnDropdownId);
+
+            if (!tableName) {
+                columnDropdown.innerHTML = '<option value="">Seleccione una tabla primero</option>';
+                return;
+            }
+
+            columnDropdown.innerHTML = '<option value="">Cargando columnas...</option>';
+
+            fetch(`/ABD/GetColumns?tableName=${tableName}`)
+                .then(response => response.json())
+                .then(columns => {
+                    columnDropdown.innerHTML = '<option value="">Seleccione una columna</option>';
+                    if (columns.length > 0) {
+                        columns.forEach(column => {
+                            columnDropdown.innerHTML += `<option value="${column}">${column}</option>`;
+                        });
+                    } else {
+                        columnDropdown.innerHTML = '<option value="">Sin columnas disponibles</option>';
+                    }
+                })
+                .catch(() => {
+                    columnDropdown.innerHTML = '<option value="">Error al cargar columnas</option>';
+                });
+        }
+
+        // Eventos para cargar columnas dinámicamente
+        document.getElementById('SourceTable').addEventListener('change', () => loadColumns('SourceTable', 'SourceColumn'));
+        document.getElementById('TargetTable').addEventListener('change', () => loadColumns('TargetTable', 'TargetColumn'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Tabla</title>
+    <link rel="stylesheet" href="~/CSS/NewStyle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Crear Tabla</h1>
+        <a href="@Url.Action("Opciones", "ABD")" class="btn btn-secondary">Anterior</a>
+
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert @(TempData["MessageType"] == "success" ? "alert-success" : "alert-danger")">
+                <i class="@(TempData["MessageType"] == "success" ? "fas fa-check-circle" : "fas fa-exclamation-circle")"></i>
+                @TempData["Message"]
+            </div>
+        }
+
+        <form id="createTableForm" method="post" action="@Url.Action("CrearTablaDinamica", "ABD")">
+            <!-- Información básica de la tabla -->
+            <div class="form-section">
+                <label for="TableName">Nombre de la Tabla</label>
+                <input type="text" id="TableName" name="TableName" placeholder="Ej: MiTabla" required />
+            </div>
+
+            <!-- Definición de columnas -->
+            <h2>Definición de Columnas</h2>
+            <div id="columnsContainer" class="form-section">
+                <div class="column-definition">
+                    <label>Nombre de la Columna</label>
+                    <input type="text" name="Columns[0].ColumnName" required />
+
+                    <label>Tipo de Dato</label>
+                    <select name="Columns[0].DataType">
+                        <option value="INT">INT</option>
+                        <option value="VARCHAR(255)">VARCHAR(255)</option>
+                        <option value="DATE">DATE</option>
+                        <option value="DECIMAL(18,2)">DECIMAL(18,2)</option>
+                    </select>
+
+                    <label>Permitir NULL</label>
+                    <select name="Columns[0].AllowNull">
+                        <option value="true">Sí</option>
+                        <option value="false">No</option>
+                    </select>
+
+                    <label>Llave Primaria</label>
+                    <select name="Columns[0].IsPrimaryKey">
+                        <option value="true">Sí</option>
+                        <option value="false" selected>No</option>
+                    </select>
+
+                    <label>Restricción (Opcional)</label>
+                    <input type="text" name="Columns[0].Constraint" placeholder="Ej: DEFAULT 0" />
+                </div>
+            </div>
+            <button type="button" id="addColumn" class="btn btn-secondary">Agregar Columna</button>
+
+            <!-- Definición de llave foránea -->
+            <h2>Llave Foránea (Opcional)</h2>
+            <div id="foreignKeySection" class="form-section">
+                <div>
+                    <label for="ForeignKeySourceColumn">Columna de esta Tabla</label>
+                    <select id="ForeignKeySourceColumn" name="ForeignKey.SourceColumn">
+                        <option value="">Seleccione una columna</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="ForeignKeyTargetTable">Tabla de Destino</label>
+                    <select id="ForeignKeyTargetTable" name="ForeignKey.TargetTable">
+                        <option value="">Seleccione una tabla</option>
+                        @foreach (var table in ViewBag.Tables as List<string>)
+                        {
+                            <option value="@table">@table</option>
+                        }
+                    </select>
+                </div>
+                <div>
+                    <label for="ForeignKeyTargetColumn">Columna de la Tabla de Destino</label>
+                    <select id="ForeignKeyTargetColumn" name="ForeignKey.TargetColumn">
+                        <option value="">Seleccione una columna</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="CascadeOnDelete">Activar Cascade On Delete</label>
+                    <input type="checkbox" id="CascadeOnDelete" name="ForeignKey.CascadeOnDelete" value="true" />
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Crear Tabla</button>
+        </form>
+    </div>
+
+    <script>
+        // Agregar columna dinámicamente
+        document.getElementById('addColumn').addEventListener('click', function () {
+            const container = document.getElementById('columnsContainer');
+            const index = container.children.length;
+
+            const newColumnHtml = `
+                <div class="column-definition">
+                    <label>Nombre de la Columna</label>
+                    <input type="text" name="Columns[${index}].ColumnName" required />
+
+                    <label>Tipo de Dato</label>
+                    <select name="Columns[${index}].DataType">
+                        <option value="INT">INT</option>
+                        <option value="VARCHAR(255)">VARCHAR(255)</option>
+                        <option value="DATE">DATE</option>
+                        <option value="DECIMAL(18,2)">DECIMAL(18,2)</option>
+                    </select>
+
+                    <label>Permitir NULL</label>
+                    <select name="Columns[${index}].AllowNull">
+                        <option value="true">Sí</option>
+                        <option value="false">No</option>
+                    </select>
+
+                    <label>Llave Primaria</label>
+                    <select name="Columns[${index}].IsPrimaryKey">
+                        <option value="true">Sí</option>
+                        <option value="false" selected>No</option>
+                    </select>
+
+                    <label>Restricción (Opcional)</label>
+                    <input type="text" name="Columns[${index}].Constraint" placeholder="Ej: DEFAULT 0" />
+                </div>
+            `;
+            container.insertAdjacentHTML('beforeend', newColumnHtml);
+            updateSourceColumnSelector();
+        });
+
+        // Actualizar las columnas en el selector de "Columna de esta Tabla"
+        function updateSourceColumnSelector() {
+            const sourceColumnSelector = document.getElementById('ForeignKeySourceColumn');
+            const columns = document.querySelectorAll('#columnsContainer input[name$=".ColumnName"]');
+
+            // Limpiar las opciones actuales
+            sourceColumnSelector.innerHTML = '<option value="">Seleccione una columna</option>';
+
+            // Añadir las nuevas columnas
+            columns.forEach(columnInput => {
+                const columnName = columnInput.value.trim();
+                if (columnName) {
+                    sourceColumnSelector.innerHTML += `<option value="${columnName}">${columnName}</option>`;
+                }
+            });
+        }
+
+        // Evento para actualizar el selector cuando se cambia el valor de un nombre de columna
+        document.getElementById('columnsContainer').addEventListener('input', function (event) {
+            if (event.target.name && event.target.name.includes(".ColumnName")) {
+                updateSourceColumnSelector();
+            }
+        });
+
+        // Cargar columnas dinámicamente para la tabla destino
+        document.getElementById('ForeignKeyTargetTable').addEventListener('change', function () {
+            const tableName = this.value;
+            const targetColumnSelector = document.getElementById('ForeignKeyTargetColumn');
+            targetColumnSelector.innerHTML = '<option value="">Cargando columnas...</option>';
+
+            fetch(`/ABD/GetColumns?tableName=${tableName}`)
+                .then(response => response.json())
+                .then(columns => {
+                    targetColumnSelector.innerHTML = '<option value="">Seleccione una columna</option>';
+                    columns.forEach(column => {
+                        targetColumnSelector.innerHTML += `<option value="${column}">${column}</option>`;
+                    });
+                })
+                .catch(() => {
+                    targetColumnSelector.innerHTML = '<option value="">Error al cargar columnas</option>';
+                });
+        });
+    </script>
+
+</body>
+</html>

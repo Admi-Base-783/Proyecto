@@ -1,0 +1,33 @@
+﻿@model Proyecto.Models.SqlQueryModel
+@{
+    ViewBag.Title = "Ejecutar Sentencia SQL";
+}
+
+<h3>Ejecutar Sentencia SQL</h3>
+<a href="@Url.Action("Opciones", "ABD")" class="btn btn-secondary">Anterior</a>
+
+
+<!-- Mostrar mensaje de éxito o error -->
+@if (TempData["Message"] != null)
+{
+    var messageType = TempData["MessageType"]?.ToString(); // "success" o "error"
+    var alertClass = messageType == "success" ? "alert-success" : "alert-danger";
+    <div class="alert @alertClass" role="alert">
+        @TempData["Message"]
+    </div>
+}
+
+<!-- Formulario para la consulta SQL -->
+<form method="post">
+    <div class="form-group">
+        <label for="Query">Consulta SQL:</label>
+        <textarea id="Query" name="Query" class="form-control" rows="5">@Model.Query</textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Ejecutar</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.Result))
+{
+    <h4>Resultado:</h4>
+    <div>@Html.Raw(Model.Result)</div>
+}

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+
+
+</head>
+<body>
+    <h1>Ingreso de Credenciales</h1>
+    
+    <link rel="stylesheet" href="~/CSS/NewStyle.css" />
+    <form action="javascript:void(0);" method="POST" onsubmi="validarIngreso()">
+
+        <div>
+            <label for="Codigo">Codigo:</label>
+            <input type="text" id="Codigo" name="Codigo" />
+        </div>
+
+        <div>
+            <label for="Contraseña">Contrasena:</label>
+            <input type="password" id="Contrasena" name="Contrasena" />
+        </div>
+
+        <label for="Roles">Tipo de Rol:</label>
+        <select name="Roles" id="Roles">
+            <option value="Administrador">Administrador</option>
+            <option value="Usuario Final">Usuario Final</option>
+
+
+        </select>
+
+        <button type="submit" title="Iniciar Sesion" onclick="getUsuario()">Iniciar sesión</button>
+
+    </form>
+
+    <p id="counter"></p>
+    <script src="~/Scripts/App/Proyecto.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getUsuario();
+    </script>
+</body>
+</html>
