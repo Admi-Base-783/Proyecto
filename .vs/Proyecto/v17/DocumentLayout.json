@@ -3,47 +3,47 @@
   "WorkspaceRootPath": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\abd\\opciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\abd\\opciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\views\\abd\\ejecutarsentencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\abd\\ejecutarsentencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\abd\\ejecutarsentencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\views\\abd\\opciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\abd\\opciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\views\\abd\\creartabla.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\abd\\creartabla.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\abd\\creartabla.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\views\\abd\\crearrelaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\abd\\crearrelaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\abd\\crearrelaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\data\\databaseexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\data\\databaseexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\data\\databaseexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\controllers\\abdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\controllers\\abdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\controllers\\abdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\data\\sqlquerybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\data\\sqlquerybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\data\\sqlquerybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\models\\sqlquerymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\models\\sqlquerymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\models\\sqlquerymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,7 +62,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Proyecto\\Views\\Shared\\_Layout.cshtml",
@@ -75,7 +75,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Opciones.cshtml",
               "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\Opciones.cshtml",
               "RelativeDocumentMoniker": "Proyecto\\Views\\ABD\\Opciones.cshtml",
@@ -88,19 +88,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CrearRelaciones.cshtml",
-              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
-              "RelativeDocumentMoniker": "Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
-              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
-              "RelativeToolTip": "Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T04:24:02.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "CrearTabla.cshtml",
               "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearTabla.cshtml",
@@ -109,8 +96,7 @@
               "RelativeToolTip": "Proyecto\\Views\\ABD\\CrearTabla.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T04:23:56.342Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T04:23:56.342Z"
             },
             {
               "$type": "Document",
@@ -122,12 +108,11 @@
               "RelativeToolTip": "Proyecto\\Data\\DatabaseExecutor.cs",
               "ViewState": "AgIAACgAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:05:37.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T03:05:37.208Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "EjecutarSentencia.cshtml",
               "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\EjecutarSentencia.cshtml",
               "RelativeDocumentMoniker": "Proyecto\\Views\\ABD\\EjecutarSentencia.cshtml",
@@ -135,12 +120,11 @@
               "RelativeToolTip": "Proyecto\\Views\\ABD\\EjecutarSentencia.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T03:04:21.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T03:04:21.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Proyecto\\Views\\Home\\Index.cshtml",
@@ -153,6 +137,18 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CrearRelaciones.cshtml",
+              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
+              "RelativeDocumentMoniker": "Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
+              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
+              "RelativeToolTip": "Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-29T04:24:02.914Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
               "Title": "SqlQueryBuilder.cs",
               "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Data\\SqlQueryBuilder.cs",
@@ -161,8 +157,7 @@
               "RelativeToolTip": "Proyecto\\Data\\SqlQueryBuilder.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:05:14.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T03:05:14.816Z"
             },
             {
               "$type": "Document",
@@ -187,8 +182,7 @@
               "RelativeToolTip": "Proyecto\\Controllers\\ABDController.cs",
               "ViewState": "AgIAAEMAAAAAAAAAAAAswGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:17:05.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T03:17:05.533Z"
             },
             {
               "$type": "Document",
@@ -200,8 +194,7 @@
               "RelativeToolTip": "Proyecto\\Models\\SqlQueryModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:03:47.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-29T03:03:47.191Z"
             }
           ]
         }
