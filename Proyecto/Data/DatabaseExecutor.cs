@@ -2,97 +2,181 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace Proyecto.Data
 {
     public static class DatabaseExecutor
     {
-        private static readonly string connectionString = "Server=DESKTOP-2BF3DDU\\SQLEXPRESS;Database=Proyecto;Trusted_Connection=True;";
-        
+        // Configuración para alternar entre SQL Server y MySQL
+        private static readonly string sqlServerConnectionString = "Server=DESKTOP-2BF3DDU\\SQLEXPRESS;Database=Proyecto;Trusted_Connection=True;";
+        private static readonly string mySqlConnectionString = "Server=localhost;Database=Proyecto;User=root;Password=;";
+
+        // Cambiar a `true` para usar MySQL, `false` para usar SQL Server
+        public static bool useMySql = false;
+
         // Método para ejecutar consultas SQL sin resultados (INSERT, UPDATE, DELETE, etc.)
         public static void ExecuteNonQuerySql(string query)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            if (useMySql)
             {
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (MySqlConnection conn = new MySqlConnection(mySqlConnectionString))
                 {
-                    conn.Open();
-                    cmd.ExecuteNonQuery(); // Ejecuta la consulta
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            else
+            {
+                using (SqlConnection conn = new SqlConnection(sqlServerConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        conn.Open();
+                        cmd.ExecuteNonQuery();
+                    }
                 }
             }
         }
 
+        // Método para ejecutar consultas SQL sin resultados (para compatibilidad con el controlador)
         public static void ExecuteSqlQuery(string query)
         {
-            using (var connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                using (var command = new SqlCommand(query, connection))
-                {
-                    command.ExecuteNonQuery();
-                }
-            }
+            ExecuteNonQuerySql(query);
         }
 
+        // Método para obtener las tablas de la base de datos
         public static List<string> GetTables()
         {
             var tables = new List<string>();
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            string query = useMySql
+                ? "SHOW TABLES"
+                : "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'";
+
+            if (useMySql)
             {
-                string query = "SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE'";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (MySqlConnection conn = new MySqlConnection(mySqlConnectionString))
                 {
-                    conn.Open();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        while (reader.Read())
+                        conn.Open();
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
                         {
-                            tables.Add(reader["TABLE_NAME"].ToString());
+                            while (reader.Read())
+                            {
+                                tables.Add(reader[0].ToString());
+                            }
                         }
                     }
                 }
             }
+            else
+            {
+                using (SqlConnection conn = new SqlConnection(sqlServerConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        conn.Open();
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                tables.Add(reader["TABLE_NAME"].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+
             return tables;
         }
 
-        // Método para ejecutar consultas que devuelven resultados (ya que se menciona en tu código)
+        // Método para ejecutar consultas que devuelven resultados (SELECT)
         public static DataTable ExecuteSqlQueryWithResult(string query)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
-                    conn.Open();
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
-                    {
-                        DataTable resultTable = new DataTable();
-                        adapter.Fill(resultTable);
-                        return resultTable;
-                    }
-                }
-            }
-        }
+            DataTable resultTable = new DataTable();
 
-        // Método ejemplo para obtener columnas (ya que se usa en el código)
-        public static List<string> GetColumnsFromTable(string tableName)
-        {
-            var columns = new List<string>();
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            if (useMySql)
             {
-                string query = $"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{tableName}'";
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (MySqlConnection conn = new MySqlConnection(mySqlConnectionString))
                 {
-                    conn.Open();
-                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
-                        while (reader.Read())
+                        conn.Open();
+                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
                         {
-                            columns.Add(reader["COLUMN_NAME"].ToString());
+                            adapter.Fill(resultTable);
                         }
                     }
                 }
             }
+            else
+            {
+                using (SqlConnection conn = new SqlConnection(sqlServerConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        conn.Open();
+                        using (SqlDataAdapter adapter = new SqlDataAdapter(cmd))
+                        {
+                            adapter.Fill(resultTable);
+                        }
+                    }
+                }
+            }
+
+            return resultTable;
+        }
+
+        // Método para obtener columnas de una tabla
+        public static List<string> GetColumnsFromTable(string tableName)
+        {
+            var columns = new List<string>();
+            string query = useMySql
+                ? $"SHOW COLUMNS FROM {tableName}"
+                : $"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '{tableName}'";
+
+            if (useMySql)
+            {
+                using (MySqlConnection conn = new MySqlConnection(mySqlConnectionString))
+                {
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        conn.Open();
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                columns.Add(reader["Field"].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            else
+            {
+                using (SqlConnection conn = new SqlConnection(sqlServerConnectionString))
+                {
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        conn.Open();
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                columns.Add(reader["COLUMN_NAME"].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+
             return columns;
         }
     }
 }
+
+

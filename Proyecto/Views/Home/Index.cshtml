@@ -2,38 +2,114 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #4F759B;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
 
+        .login-container {
+            max-width: 500px;
+            margin: 100px auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
+            .login-container h1 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                color: #fff;
+            }
+
+            .login-container form {
+                display: grid;
+                gap: 15px;
+                grid-template-columns: 1fr 2fr;
+                align-items: center;
+            }
+
+            .login-container label {
+                font-size: 1rem;
+                color: #fff;
+                text-align: left;
+            }
+
+            .login-container input, .login-container select, .login-container button {
+                width: 100%;
+                padding: 10px;
+                border-radius: 25px;
+                border: none;
+                outline: none;
+                font-size: 1rem;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease-in-out;
+            }
+
+                .login-container input:focus, .login-container select:focus {
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+                }
+
+                .login-container input[type="text"],
+                .login-container input[type="password"],
+                .login-container select {
+                    background: rgba(255, 255, 255, 0.1);
+                    color: #fff;
+                }
+
+            .login-container button {
+                background: #fff;
+                color: #4F759B;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                grid-column: 1 / -1;
+            }
+
+                .login-container button:hover {
+                    background: rgba(255, 255, 255, 0.8);
+                    color: #2C4F6B;
+                }
+    </style>
 </head>
 <body>
-    <h1>Ingreso de Credenciales</h1>
-    
-    <link rel="stylesheet" href="~/CSS/NewStyle.css" />
-    <form action="javascript:void(0);" method="POST" onsubmi="validarIngreso()">
-
-        <div>
-            <label for="Codigo">Codigo:</label>
-            <input type="text" id="Codigo" name="Codigo" />
-        </div>
-
-        <div>
-            <label for="Contraseña">Contrasena:</label>
-            <input type="password" id="Contrasena" name="Contrasena" />
-        </div>
-
-        <label for="Roles">Tipo de Rol:</label>
-        <select name="Roles" id="Roles">
-            <option value="Administrador">Administrador</option>
-            <option value="Usuario Final">Usuario Final</option>
+    <div class="login-container">
+        <h1>Ingreso de Credenciales</h1>
 
 
-        </select>
+        <form action="javascript:void(0);" method="POST" onsubmi="validarIngreso()">
 
-        <button type="submit" title="Iniciar Sesion" onclick="getUsuario()">Iniciar sesión</button>
+            
+                <label for="Codigo">Codigo:</label>
+                <input type="text" id="Codigo" name="Codigo" />
+            
 
-    </form>
+           
+                <label for="Contraseña">Contrasena:</label>
+                <input type="password" id="Contrasena" name="Contrasena" />
+            
 
-    <p id="counter"></p>
+            <label for="Roles">Tipo de Rol:</label>
+            <select name="Roles" id="Roles">
+                <option value="Administrador">Administrador</option>
+                <option value="Usuario Final">Usuario Final</option>
+
+
+            </select>
+
+            <button type="submit" title="Iniciar Sesion" onclick="getUsuario()">Iniciar sesión</button>
+
+        </form>
+
+        <p id="counter"></p>
+    </div>
     <script src="~/Scripts/App/Proyecto.js" asp-append-version="true"></script>
     <script type="text/javascript">
         getUsuario();

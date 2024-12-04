@@ -1,57 +1,159 @@
-﻿@{
-    ViewBag.Title = "Opciones";
-}
-
-<section>
-    <header>
-
-        
-        <h1>Opciones de Administrador</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li>@Html.ActionLink("Crear Tabla", "CrearTabla", "ABD")</li>
-            <li>@Html.ActionLink("Crear Relaciones de Tabla", "CrearRelaciones", "ABD")</li>
-            <li>@Html.ActionLink("Ejecutar Sentencia", "EjecutarSentencia", "ABD")</li>
-        </ul>
-    </nav>
-</section>
-
-<style>
-    section {
+﻿<style>
+    body {
         font-family: Arial, sans-serif;
-        margin: 20px;
-        padding: 15px;
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-
-    h1 {
-        color: #333;
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    nav ul {
-        list-style: none;
+        background: #4F759B;
+        margin: 0;
         padding: 0;
+        color: #fff;
     }
 
-        nav ul li {
-            margin-bottom: 8px;
+    .dashboard-header {
+        text-align: center;
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        margin: 20px auto;
+        max-width: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+        .dashboard-header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
 
-            nav ul li a {
-                text-decoration: none;
-                color: #007bff;
-                font-weight: bold;
-            }
+    .search-bar {
+        max-width: 400px;
+        margin: 0 auto;
+        position: relative;
+    }
 
-                nav ul li a:hover {
-                    text-decoration: underline;
-                }
-  
-    
+        .search-bar input {
+            width: 100%;
+            padding: 10px 15px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    .dashboard-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .dashboard-item {
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+        .dashboard-item:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border: 2px solid white;
+        }
+
+        .dashboard-item i {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .dashboard-item h5 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .dashboard-item i {
+            font-size: 2rem;
+        }
+
+        .dashboard-item h5 {
+            font-size: 1rem;
+        }
+    }
 </style>
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Dashboard Administrador</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" class="form-control" placeholder="Buscar opciones..." onkeyup="filterDashboard()">
+        </div>
+    </header>
+
+    <main>
+        <div class="dashboard-grid" id="dashboardGrid">
+            <div class="dashboard-item" onclick="location.href='@Url.Action("CrearTabla", "ABD")'">
+                <i class="fas fa-table"></i>
+                <h5>Crear Tabla</h5>
+            </div>
+            <div class="dashboard-item" onclick="location.href='@Url.Action("CrearRelaciones", "ABD")'">
+                <i class="fas fa-link"></i>
+                <h5>Crear Relaciones</h5>
+            </div>
+            <div class="dashboard-item" onclick="location.href='@Url.Action("EjecutarSentencia", "ABD")'">
+                <i class="fas fa-terminal"></i>
+                <h5>Ejecutar Sentencia</h5>
+            </div>
+            <div class="dashboard-item">
+                <i class="fas fa-database"></i>
+                <h5>Ver Tablas</h5>
+            </div>
+            <div class="dashboard-item">
+                <i class="fas fa-chart-bar"></i>
+                <h5>Reportes</h5>
+            </div>
+            <div class="dashboard-item">
+                <i class="fas fa-user-cog"></i>
+                <h5>Configuración</h5>
+            </div>
+            <div class="dashboard-item">
+                <i class="fas fa-question-circle"></i>
+                <h5>Ayuda</h5>
+            </div>
+            <div class="dashboard-item">
+                <i class="fas fa-envelope"></i>
+                <h5>Mensajes</h5>
+            </div>
+            <div class="dashboard-item" onclick="location.href='@Url.Action("Index", "Home")'">
+                <i class="fas fa-calendar-alt"></i>
+                <h5>Salir</h5>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function filterDashboard() {
+            const searchValue = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.getElementById('dashboardGrid').getElementsByClassName('dashboard-item');
+
+            Array.from(items).forEach(item => {
+                const text = item.querySelector('h5').textContent.toLowerCase();
+                if (text.includes(searchValue)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+

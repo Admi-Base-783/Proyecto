@@ -20,8 +20,22 @@ namespace Proyecto.Data
                 ? $", PRIMARY KEY ({string.Join(", ", primaryKeys)})"
                 : string.Empty;
 
-            return $"CREATE TABLE {model.TableName} ({string.Join(", ", columns)}{primaryKeyClause});";
+            var foreignKeys = model.Columns
+                .Where(c => c.IsForeignKey)
+                .Select(c => $@"
+        CONSTRAINT FK_{model.TableName}_{c.ReferencedTable}
+        FOREIGN KEY ({c.ColumnName})
+        REFERENCES {c.ReferencedTable} ({c.ReferencedColumn})
+        ")
+                .ToList();
+
+            string foreignKeyClause = foreignKeys.Any()
+                ? $", {string.Join(", ", foreignKeys)}"
+                : string.Empty;
+
+            return $"CREATE TABLE {model.TableName} ({string.Join(", ", columns)}{primaryKeyClause}{foreignKeyClause});";
         }
+
         public static string GenerateRelationshipQuery(RelationshipDefinitionModel model)
         {
             string cascadeOption = model.CascadeOnDelete ? "ON DELETE CASCADE" : string.Empty;

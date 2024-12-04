@@ -17,6 +17,9 @@ namespace Proyecto.Models
         public string DataType { get; set; }
         public bool AllowNull { get; set; }
         public bool IsPrimaryKey { get; set; }
+        public bool IsForeignKey { get; set; }
+        public string ReferencedTable { get; set; }
+        public string ReferencedColumn { get; set; }
         public string Constraint { get; set; } // Ejemplo: DEFAULT 0
     }
     public class ForeignKeyDefinition

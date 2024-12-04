@@ -3,48 +3,20 @@
   "WorkspaceRootPath": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\abd\\opciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\views\\abd\\opciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\abd\\opciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|c:\\administracion base de datos i\\proyecto\\proyecto\\proyecto\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\abd\\ejecutarsentencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\abd\\ejecutarsentencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\abd\\creartabla.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\abd\\creartabla.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\abd\\crearrelaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\abd\\crearrelaciones.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\data\\databaseexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\data\\databaseexecutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\controllers\\abdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\controllers\\abdcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\data\\sqlquerybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\data\\sqlquerybuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\models\\sqlquerymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\models\\sqlquerymodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\proyecto\\views\\abd\\ejecutarsentencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E301C985-EA6D-4FC8-BBAB-56C9E4D726B9}|Proyecto\\Proyecto.csproj|solutionrelative:proyecto\\views\\abd\\ejecutarsentencia.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,62 +25,49 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 651,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Proyecto\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Proyecto\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAwwBQAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T04:37:21.117Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Proyecto\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Proyecto\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAuwF0AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-04T02:42:55.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Opciones.cshtml",
               "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\Opciones.cshtml",
               "RelativeDocumentMoniker": "Proyecto\\Views\\ABD\\Opciones.cshtml",
               "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\Opciones.cshtml",
               "RelativeToolTip": "Proyecto\\Views\\ABD\\Opciones.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADYAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T04:32:32.26Z",
+              "WhenOpened": "2024-12-04T02:34:00.39Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CrearTabla.cshtml",
-              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearTabla.cshtml",
-              "RelativeDocumentMoniker": "Proyecto\\Views\\ABD\\CrearTabla.cshtml",
-              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearTabla.cshtml",
-              "RelativeToolTip": "Proyecto\\Views\\ABD\\CrearTabla.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CrearRelaciones.cshtml",
+              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
+              "RelativeDocumentMoniker": "Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
+              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
+              "RelativeToolTip": "Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T04:23:56.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DatabaseExecutor.cs",
-              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Data\\DatabaseExecutor.cs",
-              "RelativeDocumentMoniker": "Proyecto\\Data\\DatabaseExecutor.cs",
-              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Data\\DatabaseExecutor.cs",
-              "RelativeToolTip": "Proyecto\\Data\\DatabaseExecutor.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAADcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:05:37.208Z"
+              "WhenOpened": "2024-12-04T02:42:43.743Z"
             },
             {
               "$type": "Document",
@@ -118,83 +77,19 @@
               "RelativeDocumentMoniker": "Proyecto\\Views\\ABD\\EjecutarSentencia.cshtml",
               "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\EjecutarSentencia.cshtml",
               "RelativeToolTip": "Proyecto\\Views\\ABD\\EjecutarSentencia.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAuwKAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T03:04:21.777Z"
-            },
+              "WhenOpened": "2024-12-04T02:31:43.098Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 54,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Proyecto\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Proyecto\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T02:58:08.776Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CrearRelaciones.cshtml",
-              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
-              "RelativeDocumentMoniker": "Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
-              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
-              "RelativeToolTip": "Proyecto\\Views\\ABD\\CrearRelaciones.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-29T04:24:02.914Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SqlQueryBuilder.cs",
-              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Data\\SqlQueryBuilder.cs",
-              "RelativeDocumentMoniker": "Proyecto\\Data\\SqlQueryBuilder.cs",
-              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Data\\SqlQueryBuilder.cs",
-              "RelativeToolTip": "Proyecto\\Data\\SqlQueryBuilder.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:05:14.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Web.config",
-              "RelativeDocumentMoniker": "Proyecto\\Web.config",
-              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Web.config",
-              "RelativeToolTip": "Proyecto\\Web.config",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-29T03:15:57.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ABDController.cs",
-              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Controllers\\ABDController.cs",
-              "RelativeDocumentMoniker": "Proyecto\\Controllers\\ABDController.cs",
-              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Controllers\\ABDController.cs",
-              "RelativeToolTip": "Proyecto\\Controllers\\ABDController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAswGEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:17:05.533Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SqlQueryModel.cs",
-              "DocumentMoniker": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Models\\SqlQueryModel.cs",
-              "RelativeDocumentMoniker": "Proyecto\\Models\\SqlQueryModel.cs",
-              "ToolTip": "C:\\ADMINISTRACION BASE DE DATOS I\\Proyecto\\Proyecto\\Proyecto\\Models\\SqlQueryModel.cs",
-              "RelativeToolTip": "Proyecto\\Models\\SqlQueryModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T03:03:47.191Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
